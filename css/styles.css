@@ -7,26 +7,25 @@
 
 }
 
+
+/* Typography */
+
+
 html{
     /* TODO: 1 REM = 16 PX DEFAULT BROWSER UNIT AND IF IT DEFINED AS 62,5% = 10 PX SO 1 REM = 10 PX */
     font-size: 62.5%;
-
 }
-
 
 body {
  font-family: Inter, Arial, Helvetica, sans-serif;
  color: var(--color-body);
  font-size: 2.4rem;  /*mobile */
  line-height: 1.5;
-
 }
-
 
 h1, h2, h3 {
     color: var(--color-headings);
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem;    
 }
 
 h1 {
@@ -41,11 +40,38 @@ h3 {
     font-size: 3rem;
 }
 
-p {
-    margin-top: 0;
+a {
+    margin-top: 0; 
+    text-decoration: none;   /* no underline  */
 }
 
-@media screen and (max-width: 1024px) {
+
+
+/* Links */
+
+.link-arrow {
+    
+    color: var(--color-accent);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.link-arrow::after {
+    content: "-->";
+    margin-left: 5px;
+    transition: .15s;
+    
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+    
+}
+
+
+
+@media screen and (min-width: 1024px) {
      body {
         font-size: 1.8rem;
      }
@@ -59,5 +85,9 @@ p {
 
     h3 {
         font-size: 2.4rem;
+    }
+
+    .link-arrow {
+        font-size: 1.5rem;
     }
 }
