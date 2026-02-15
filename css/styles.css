@@ -1,5 +1,5 @@
 :root {
-     --color-primar: #2584ff;
+     --color-primary: #2584ff;
      --color-secondary: #00d9ff;
      --color-accent: #ff3400;
      --color-headings : #1b0760;
@@ -17,7 +17,7 @@ html{
 }
 
 body {
- font-family: Inter, Arial, Helvetica, sans-serif;
+ font-family: Inter, Arial, Helvetica, sans-serif;  /* a font variable font family that allows to store to store diffirenet types of same type in one single file */
  color: var(--color-body);
  font-size: 2.4rem;  /*mobile */
  line-height: 1.5;
@@ -71,6 +71,35 @@ a {
 
 
 
+
+/* Badges  */
+
+/* structure */
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: .5rem 2rem;
+    white-space: nowrap;    /* prevent badge to wrap into next line, whatever putting insdie the badge should alwayes appear in a single line */
+}
+
+/* skin */
+.badge--primary {
+    background-color: var(--color-primary);
+    color:  #fff;
+}
+
+.badge--secondary {
+    background-color: var(--color-secondary);
+    color:  #fff;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+
+
 @media screen and (min-width: 1024px) {
      body {
         font-size: 1.8rem;
@@ -89,5 +118,13 @@ a {
 
     .link-arrow {
         font-size: 1.5rem;
+    }
+
+    .badge {
+        font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
     }
 }
