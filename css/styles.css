@@ -233,15 +233,27 @@ attached to the "role" of the element, not the tag name.*/
     color: #fff;
 }
 
-
-
-
 .btn--block {
     width: 100%;
     display: inline-block; 
 }
 
+/* ========================================= */
 
+/* Inputs */
+
+.input {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: var(--color-headings);
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+    font-size: 2rem;
+}
+
+::placeholder {
+    color:#cdcbd7;
+}
 
 @media screen and (min-width: 1024px) {
      body {
@@ -275,6 +287,10 @@ attached to the "role" of the element, not the tag name.*/
     }
 
     .btn {
+        font-size: 1.5rem;
+    }
+
+    .input {
         font-size: 1.5rem;
     }
 }
