@@ -374,10 +374,27 @@ attached to the "role" of the element, not the tag name.*/
     top: -6px;
     right: 20px;
     z-index: 10;
-    
-    
+       
+}
 
-    
+
+/* ========================================= */
+/*  media Icons */
+
+.media {
+    display: flex;
+}
+
+.media-title {
+    margin-top: 0px;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
+.media__image {
+    margin-top: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
