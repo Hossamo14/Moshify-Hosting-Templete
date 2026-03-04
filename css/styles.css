@@ -849,11 +849,8 @@ attached to the "role" of the element, not the tag name.*/
 
 
 .block-plans .grid--1x3 {
-    gap: 5rem 4rem;
-
-    
+    gap: 5rem 4rem; 
 }
-
 
 .block-plans .card {
     max-width: 500px;
@@ -862,9 +859,29 @@ attached to the "role" of the element, not the tag name.*/
 
 
 
+/* ========================================= */
+/*  Feature Blocks */
 
+.feature {
+    gap: 4rem 4rem;
+    margin: 4rem 0;
+}
 
+.feature__text {
+    line-height: 30px;
+    margin: 0 5rem 2rem 0;
+}
 
+.feature__image {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
+    
+}
 
 
 
