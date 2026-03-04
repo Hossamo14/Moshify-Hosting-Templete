@@ -34,7 +34,7 @@ body {
  font-family: Inter, Arial, Helvetica, sans-serif;  /* a font variable font family that allows to store to store diffirenet types of same type in one single file */
  color: var(--color-body);
  font-size: 2.4rem;  /*mobile */
- line-height: 1.5;
+ line-height: 1.1;
 }
 
 h1, h2, h3 {
@@ -750,10 +750,34 @@ attached to the "role" of the element, not the tag name.*/
 
 
 
+/* ========================================= */
+/*  Hero */
 
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
 
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 2px;
+    margin: 2rem 0 5rem;
+}
 
+.hero__image {
+    width: 100%;
+}
 
+@media screen and (min-width:768px) {
+    .hero {
+        padding-top: 0px;
+    }
+    
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
+}
 
 
 
