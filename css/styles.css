@@ -348,6 +348,10 @@ attached to the "role" of the element, not the tag name.*/
     color:#ffffff
 }
 
+.card--primary .badge--primary {
+    background-color: #126de4;
+}
+
 .card--secondary .badge--secondary {
     background-color: #1ec0dd;
 }
@@ -356,6 +360,12 @@ attached to the "role" of the element, not the tag name.*/
 /* ========================================= */
 
 /* plans */
+
+
+
+.plan {
+    transition: transform .3s;
+}
 
 .plan__name {
     color: #fff;
@@ -392,9 +402,14 @@ attached to the "role" of the element, not the tag name.*/
 
 .plan--popular .card__header {
     position: relative;
-    overflow: visible;
-    
+    overflow: visible; 
 }
+
+.plan--popular {
+    transform: scale(1.1);
+}
+
+
 
 .plan--popular .card__header::before {
     content: url(../images/popular.svg);
@@ -408,6 +423,14 @@ attached to the "role" of the element, not the tag name.*/
        
 }
 
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
+}
 
 /* ========================================= */
 /*  media Icons */
@@ -821,14 +844,21 @@ attached to the "role" of the element, not the tag name.*/
 }
 
 
+/* ========================================= */
+/*  plans Block */
 
 
+.block-plans .grid--1x3 {
+    gap: 5rem 4rem;
+
+    
+}
 
 
-
-
-
-
+.block-plans .card {
+    max-width: 500px;
+  margin: 5rem auto;
+}
 
 
 
