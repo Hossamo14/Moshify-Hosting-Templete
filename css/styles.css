@@ -632,9 +632,50 @@ attached to the "role" of the element, not the tag name.*/
 
 
 
+/* ========================================= */
+/*  Blocks */
+
+.block {
+    --padding-vertical: 6rem; /* this variable is avilable for block class and it's childrem */
+    padding: var(--padding-vertical) 2rem;
+   
+}
+
+.block__header {   
+     text-align: center; /* we wrap those elements (h2, p) with header block to separte the elemnt from content as if we apply that to the block class it will affect any later elements inside the block calss (child) */
+}
+
+.block__heading {
+    margin-top: 0;
+}
+
+.block--dark {
+    background-color: #000;
+    color: #7b858b;
+}
+
+.block--dark .block__heading {
+    color: #fff;
+}
+
+.block--skewed-right {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.block--skewed-left {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
 
 
+/* ========================================= */
+/*  Container */   
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 
 
