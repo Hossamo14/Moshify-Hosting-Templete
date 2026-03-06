@@ -678,6 +678,7 @@ attached to the "role" of the element, not the tag name.*/
 
 .block__header {   
      text-align: center; /* we wrap those elements (h2, p) with header block to separte the elemnt from content as if we apply that to the block class it will affect any later elements inside the block calss (child) */
+     margin-bottom: 4rem;
 }
 
 .block__heading {
