@@ -125,6 +125,7 @@ a {
 .list {
     list-style: none;
     padding-left: 0;
+    margin: 0 0 3rem 0;
     
 }
 
@@ -636,6 +637,8 @@ attached to the "role" of the element, not the tag name.*/
 .collapsible__header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
+    
 }
 
 .collapsible__heading__text {
@@ -653,7 +656,7 @@ attached to the "role" of the element, not the tag name.*/
     overflow: hidden;
     opacity: 0;
     transition: all .5s;
-    
+        
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -664,6 +667,7 @@ attached to the "role" of the element, not the tag name.*/
     max-height: 100vh;
     opacity: 1;
 }
+
 
 
 
@@ -916,6 +920,94 @@ attached to the "role" of the element, not the tag name.*/
 }
 
 
+/* ========================================= */
+/*  Footer Block */
+
+.footer {
+    background-color: #232323;
+}
+
+.footer a {
+    color: #777;
+    transition: color .3s;
+}
+
+.footer a:hover {
+    color: #FFF;
+}
+
+.footer__section {
+    padding: 2rem;
+    border-bottom: 1px solid #393939;
+}
+
+.footer .collapsible__header {
+    margin-bottom: 0 ;
+}
+.footer__brand {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer__logo {
+        width: 100%;
+        max-width: 300px;
+}
+
+.footer__copyright{
+    font-size: 1.2rem;
+    opacity: .3;
+   
+}
+
+
+.footer__section .footer-list__item  {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.footer__section > a {
+color: #fff;
+}
+
+@media  screen and (min-width:768px) {
+    .footer__sections {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+   
+    .footer .collapsible__chevron {
+        display: none;
+    }
+
+    .footer .collapsible__content {
+        opacity: 1;
+        max-height: 100%;
+
+    }
+
+    .footer__brand {
+        order: -1;
+        margin-top: 1rem;
+    }
+
+    .footer__copyright {
+        font-size: 1.5rem;
+    }
+
+    .footer__section {
+        border: 0;
+    }
+
+    .footer__heading {
+        font-size: 1.6rem;
+    }
+
+  
+    
+}
 
 
 
