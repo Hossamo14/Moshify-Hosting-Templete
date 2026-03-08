@@ -221,7 +221,7 @@ attached to the "role" of the element, not the tag name.*/
     font-weight: 600;
     margin: 1rem 0rem;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-transform: uppercase;
     cursor: pointer;
     white-space: nowrap;
@@ -316,7 +316,8 @@ attached to the "role" of the element, not the tag name.*/
 .input-group .input {
     border:0;
     flex-grow: 1;  
-    padding: 1.5rem 3rem ;  
+    padding: 1.5rem 3rem ; 
+    width: 0; 
 }
 
 .input-group .btn {
@@ -592,6 +593,8 @@ attached to the "role" of the element, not the tag name.*/
 .callout {
     padding: 4rem;
     border-radius: 5px;
+    margin: 30px auto;
+    max-width:1024px;
 }
 .callout--primary {
     background-color: var(--color-primary);
@@ -781,6 +784,7 @@ attached to the "role" of the element, not the tag name.*/
         /* we make max height and opacity to make the list visable  as it initially invisable as the navbar in collapsible state */
         max-height: 100%;
         opacity: 1;
+        
 
     }
 
@@ -834,7 +838,7 @@ attached to the "role" of the element, not the tag name.*/
 
 .domain-block__prices {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -863,7 +867,7 @@ attached to the "role" of the element, not the tag name.*/
 
 .block-plans .card {
     max-width: 500px;
-  margin: 5rem auto;
+  margin: 2rem auto;
 }
 
 
@@ -1011,7 +1015,17 @@ color: #fff;
 
 
 
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 
 
